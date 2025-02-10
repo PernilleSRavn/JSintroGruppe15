@@ -1,11 +1,35 @@
-#toggletext {
-
-
+body {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 
-section {
-    height: 100px;
-    background-color: teal;
-    margin: 5px 0px 5px 0px;
+.faq-container {
+    border: 1px solid #000000; /*farven på kanten rundt om spørgsmålkassen */
+    border-radius: 10px; /*runding af hjørne */
+    margin-bottom: 20px; /*afstand mellem tekstboksene */
+    padding: 10px; /*spacing over og under spørgsmålet inde i boksen */
+    cursor: pointer; /*gør at det er en finger der peger på spørgsmål når musen hover hen over */
+    background: #63A4BD; /*baggrundsfarve i boksen */
 }
+
+
+.faq-container:hover {
+    background: #63A4BD; /*farve når musen holdes hen over boksen */
+    opacity: 80%; /*gør at farvens styrke er lidt nedsat så man kan se at musen holdes hen over*/
+}
+
+
+.answer {
+    display: none;
+    margin-top: 10px; /*afstand fra tekst og overskrift*/
+    color: #1d1c1c; /*farve på teksten inden i boksen*/
+}
+
+.question {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
