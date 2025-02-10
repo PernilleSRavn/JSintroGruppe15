@@ -1,9 +1,11 @@
-.mystyle {
-    width: 100%;
-    padding: 25px;
-    background-color: #63A4BD;
-    color: white;
-    font-size: 25px;
-    box-sizing: border-box;
-    opacity: 100%;
-  }
+#toggletext {
+
+
+}
+
+
+section {
+    height: 100px;
+    background-color: teal;
+    margin: 5px 0px 5px 0px;
+}
