@@ -44,3 +44,19 @@ function showSlides(n) {
   }, 30000);
 }
 // Soife slut
+
+// Pernille start //
+
+document.addEventListener("DOMContentLoaded", function() {
+  const faqs = document.querySelectorAll('.faq-container');
+
+
+  faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+          const answer = faq.querySelector('.answer');
+          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+  });
+});
+
+// Pernille Slut //
