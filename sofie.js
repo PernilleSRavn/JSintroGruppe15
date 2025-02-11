@@ -33,5 +33,5 @@ function showSlides(n) {
   // Auto-advance slides every 5 seconds
   setTimeout(() => {
     plusSlides(1);
-  }, 10000);
+  }, 30000);
 }
