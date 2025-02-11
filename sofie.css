@@ -48,8 +48,8 @@
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.2vh;
+  width: 1.2vh;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
@@ -65,7 +65,7 @@
   margin-right: 5px;
   padding: 0.9vh 4vw;
   border: 0px;
-  background-color: #63A4BD;
+  background-color: #7EB6CC;
 }
 .button-grey { 
   border-radius: 10px;
