@@ -1,28 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  Promise.all([
-    fetch("header-jakob.html").then(response => response.text()),
-    fetch("sofie.html").then(response => response.text()),
-    fetch("sofie.js").then(response => response.text()),
-    fetch("sofie.css").then(response => response.text()),
-  ])
-  .then(([headerHTML, sofieHTML]) => {
-    document.body.insertAdjacentHTML("afterbegin", headerHTML); // Insert header first
-    document.body.insertAdjacentHTML("beforeend", sofieHTML); // Insert sofie.html at the end
-  })
-  .catch(error => console.error("Error loading files:", error));
-});
-
-
-
-
-
 
 /* Jakob */
 document.addEventListener("DOMContentLoaded", function () {
     alert('Script kører')
 });
 /* Jakob */
-
 //sofie
 let slideIndex = 1;
 showSlides(slideIndex);
