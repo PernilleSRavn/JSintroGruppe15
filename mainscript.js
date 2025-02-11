@@ -12,16 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   .catch(error => console.error("Error loading files:", error));
 });
 
-
-
-
-
-
-/* Jakob */
-document.addEventListener("DOMContentLoaded", function () {
-    alert('Script kører')
-});
-/* Jakob */
 //sofie
 let slideIndex = 1;
 showSlides(slideIndex);
