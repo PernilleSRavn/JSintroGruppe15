@@ -1,6 +1,4 @@
 /* Jakob */
-html, body {padding: 0; margin: 0;}
-img {max-width: 100%; max-height: 100%;}
 
 header {
     font-family: 'Montserrat';
@@ -77,8 +75,6 @@ svg {
     transform: scale(1.2);
 }
 
-
-
 .burgerlineone-ani {
     display: none;
 }
@@ -103,8 +99,55 @@ svg {
     to {transform: translate(2.5px, 16px) rotate(-45deg);}
 }
 
-/* Jakob */
+/* Jakob slut*/
+/* Jakob pt2*/
 
+#Services_Container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#Services_Container__Top {
+    width: 80%;
+    margin: auto;
+    align-content: flex-end;
+    padding-bottom: 5vh;
+    flex: 1;
+}
+
+#Services_Container__Bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+#Services_Container__Bottom main {
+    flex: 1;
+    text-align: center;
+
+}
+
+#Services_Container__Bottom main {
+    background-color: gainsboro;
+    border-radius: 2vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0vh .5vh 0vh .5vh;
+}
+
+#trailersvg {
+    transform: scale(1.2); margin-top: 25px; margin-bottom: 10px;
+}
+
+#Services_Container__Bottom img {
+    max-width: 25%;
+}
+/* Jakob pt2 slut */
 /* Sofie */
 * {
     box-sizing: border-box;
