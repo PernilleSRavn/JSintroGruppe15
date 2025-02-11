@@ -1,12 +1,25 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    max-width: 800px;
-    margin: 20px auto;
+
+
+p {
+    font-family: "Montserrat", serif; 
 }
 
+h1 {
+    font-family: "Gabarito", serif;
+}
+
+h2 {
+    font-family: "Gabarito", serif;
+    color: rgb(0, 0, 0); /*farve på spørgsmålene i boksen */
+}
+
+.faq-section {
+    max-width: 80vw; /*bredde på boksene*/
+    margin: 200px auto; /*spacing under den sidste boks samt over ´spørgsmål og svar´ */
+
+}
 
 .faq-container {
-    border: 1px solid #000000; /*farven på kanten rundt om spørgsmålkassen */
     border-radius: 10px; /*runding af hjørne */
     margin-bottom: 20px; /*afstand mellem tekstboksene */
     padding: 10px; /*spacing over og under spørgsmålet inde i boksen */
@@ -16,7 +29,7 @@ body {
 
 
 .faq-container:hover {
-    background: #63A4BD; /*farve når musen holdes hen over boksen */
+    background: #bad5e1; /*farve når musen holdes hen over boksen */
     opacity: 80%; /*gør at farvens styrke er lidt nedsat så man kan se at musen holdes hen over*/
 }
 
@@ -24,12 +37,42 @@ body {
 .answer {
     display: none;
     margin-top: 10px; /*afstand fra tekst og overskrift*/
-    color: #1d1c1c; /*farve på teksten inden i boksen*/
+    color: #000000; /*farve på paragraph teksten inden i boksen*/
 }
 
 .question {
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*skrifttype på h3 */
+    font-size: 20px; /*størrelse på skrifttype h3*/
 }
 
+
+.footer {
+    background-color: #63A4BD; /* Lys baggrund */
+    padding: 20px 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column.left {
+    flex: 1; /* Sørger for at fylde venstre side */
+    text-align: left;
+}
+
+.footer-right {
+    display: flex;
+    gap: 40px; /* Juster afstanden mellem kolonner */
+    
+}
+
+.footer-column {
+    text-align: right;
+}
+  
