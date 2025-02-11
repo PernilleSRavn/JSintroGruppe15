@@ -1,21 +1,51 @@
-
-
+/*STYLING AF FONT */
 p {
     font-family: "Montserrat", serif; 
+    font-size: medium;
 }
 
 h1 {
     font-family: "Gabarito", serif;
+    font-size: xx-large;
+
 }
 
 h2 {
-    font-family: "Gabarito", serif;
+    font-family: "Montserrat", serif; 
     color: rgb(0, 0, 0); /*farve på spørgsmålene i boksen */
+    font-weight: bold;
+    font-size: x-large;
+
 }
+
+/*STYLING AF BILLEDE MED LISBETH OG OM HENDE SEKTION */
+
+/*Her styler jeg den sektion som både billede og tekst er i */
+.lisbeth_container {
+    background-color: #63A4BD;
+}
+
+ /*Her laver jeg en container til billede og tekst så de er ved siden af hinanden*/
+.image-text-container {
+   
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 3rem;
+    
+}
+
+#lisbeth_billed {
+    width: 200px;
+    height: auto;
+   
+}
+
+/* HER STARTER FAQ STYLING */
 
 .faq-section {
     max-width: 80vw; /*bredde på boksene*/
-    margin: 200px auto; /*spacing under den sidste boks samt over ´spørgsmål og svar´ */
+    margin: 100px auto; /*spacing under den sidste boks samt over ´spørgsmål og svar´ */
 
 }
 
@@ -40,12 +70,7 @@ h2 {
     color: #000000; /*farve på paragraph teksten inden i boksen*/
 }
 
-.question {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*skrifttype på h3 */
-    font-size: 20px; /*størrelse på skrifttype h3*/
-}
-
+/*HER BEGYNDER FOOTER STYLING */
 
 .footer {
     background-color: #63A4BD; /* Lys baggrund */
