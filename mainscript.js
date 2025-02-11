@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     alert('Script kører')
 });
 /* Jakob */
+
 //sofie
 let slideIndex = 1;
 showSlides(slideIndex);
