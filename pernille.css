@@ -22,26 +22,25 @@ h2 {
 
 /*Her styler jeg den sektion som både billede og tekst er i */
 .lisbeth_container {
-    background-color: #63A4BD;
+    background-color: #7eb6cc; /* Tilføjer baggrundsfarve */
+    padding: 5px; /* Indvendig afstand rundt om containeren*/
 }
 
  /*Her laver jeg en container til billede og tekst så de er ved siden af hinanden*/
 .image-text-container {
-   
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin: 3rem;
+    display: flex; /* Bruger flexbox for at få billede og tekst til at stå på række */
+    align-items: center; /* Centrerer elementerne lodret i forhold til hinanden */
+    gap: 50px; /* Tilføjer 50px afstand mellem billede og tekst */
+    margin: 3rem; /* Tilføjer en margin på omkring containeren */
     
 }
 
 #lisbeth_billed {
-    width: 200px;
-    height: auto;
-   
+    width: 500px; /* Bredde på billedet*/
+    height: 300px; /* højden på billedet */
 }
 
-/* HER STARTER FAQ STYLING */
+/* HER STARTER FAQ STYLING bla */
 
 .faq-section {
     max-width: 80vw; /*bredde på boksene*/
@@ -54,7 +53,7 @@ h2 {
     margin-bottom: 20px; /*afstand mellem tekstboksene */
     padding: 10px; /*spacing over og under spørgsmålet inde i boksen */
     cursor: pointer; /*gør at det er en finger der peger på spørgsmål når musen hover hen over */
-    background: #63A4BD; /*baggrundsfarve i boksen */
+    background: #7eb6cc; /*baggrundsfarve i boksen */
 }
 
 
@@ -73,31 +72,31 @@ h2 {
 /*HER BEGYNDER FOOTER STYLING */
 
 .footer {
-    background-color: #63A4BD; /* Lys baggrund */
-    padding: 20px 40px;
+    background-color: #7eb6cc; /* Tilføjer baggrundsfarve */
+    padding: 20px 40px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Bruger flexbos her til at få indholdet til at se sådan ud som det gør */
+    justify-content: space-between; /* Fordeler afstand mellem elementer */
+    align-items: center; /*Centrerer indholdet lodret */
+    max-width: 1200px; /* Giver maks bredde på containeren */
+    margin: 0 auto; /*centrere containeren horisontalt på siden  */
 }
 
 .footer-column.left {
     flex: 1; /* Sørger for at fylde venstre side */
-    text-align: left;
+    text-align: left; /*Justere tekst til venstre */
+    line-height: 0.5; /* Sætter linjehøjde til 0.5 for at reducere afstanden mellem linjerne */
 }
 
 .footer-right {
-    display: flex;
+    display: flex; /* Bruger flexbox til at arrangere indholdet i denne sektion */
     gap: 40px; /* Juster afstanden mellem kolonner */
+    line-height: 0.5; /* Sætter linjehøjde til 0.5 for at reducere afstanden mellem linjerne */
     
 }
 
 .footer-column {
-    text-align: right;
+    text-align: right; /* Justere tekst til højre */
 }
-  
