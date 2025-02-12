@@ -183,7 +183,7 @@ svg {
   }
   
   .text-overlay {
-    position: absolute;
+    position: relative;
     top: 35%; /* Center vertically */
     left: 10vw; /* Center horizontally */
     color: white; /* Text color */
@@ -246,11 +246,7 @@ svg {
     font-size:medium;
     font-weight: 400;
   }
-
-  h2{
-    font-family: "Montserrat", serif; 
-    font-size:medium;
-  }
+  
   /* Sofie Slut */
 
   /*Pernille start*/
