@@ -6,7 +6,7 @@ html, body {
 
 
 header {
-    position: fixed; 
+    position: absolute; 
     top: 0;
     margin: auto;
     right: 0;
