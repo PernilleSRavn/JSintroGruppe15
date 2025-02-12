@@ -149,13 +149,14 @@ svg {
 }
 /* Jakob pt2 slut */
 /* Sofie */
-
   .slideshow-container {
     width: 100%;
     max-width: 100%;
     height: 80vh; /* Adjust height as needed */
     position: relative;
     overflow: hidden; /* Ensure images don't overflow */
+    margin: 0;
+    padding: 0;
   }
   
   .mySlides {
