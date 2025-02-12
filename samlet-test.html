@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="jquery-3.7.1.min.js"></script>
+    <script src="sofie.js" defer></script>
+</head>
+<body>
+<header></header>
+<div id="billedgalleri"></div>
+<div id="services"></div>
+<div id="omsection"></div>
+
+Hej Sofie
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded" , function () {
+        $("header").load("header-jakob.html");
+        $("#billedgalleri").load("sofie.html");
+        $("#services").load("jakob-servicessection.html");
+        $("#omsection").load("pernille.html");
+    });
+        </script>
+</html>
