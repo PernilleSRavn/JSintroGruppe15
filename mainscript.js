@@ -1,7 +1,7 @@
 
 /* Jakob */
 document.addEventListener("DOMContentLoaded", function () {
-    //alert('Script kører')
+  $("header").load("header-jakob.html");
 });
 /* Jakob */
 
