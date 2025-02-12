@@ -227,6 +227,7 @@ svg {
     padding: 0.9vh 4vw;
     border: 0px;
     background-color: #7EB6CC;
+    font-size: larger;
   }
   .button-grey { 
     border-radius: 10px;
@@ -249,7 +250,10 @@ svg {
     font-weight: 400;
   }
 
-  h3
+  h2{
+    font-family: "Montserrat", serif; 
+    font-size:large;
+  }
   /* Sofie Slut */
 
   /*Pernille start*/
