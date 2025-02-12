@@ -1,5 +1,4 @@
 <!--Sektion: kasse med billede og tekst ved siden af hinanden-->
-<script src="pernille.js"></script>
 
 Dette er et hej fra pernille.html
     <section class="lisbeth_container">
@@ -69,8 +68,6 @@ Dette er et hej fra pernille.html
     </div>
 
 </section>
-
-
     
     <footer class="footer"> 
 
@@ -116,3 +113,16 @@ Dette er et hej fra pernille.html
             </div>
         </div>
     </footer> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const faqs = document.querySelectorAll('.faq-container');
+
+
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            const answer = faq.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
+    </script>

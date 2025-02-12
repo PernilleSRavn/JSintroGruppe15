@@ -6,7 +6,7 @@ html, body {
 
 
 header {
-    position: fixed; 
+    position: absolute; 
     top: 0;
     margin: auto;
     right: 0;
@@ -184,7 +184,7 @@ svg {
   
   .text-overlay {
     position: absolute;
-    top: 55%; /* Center vertically */
+    top: 35%; /* Center vertically */
     left: 10vw; /* Center horizontally */
     color: white; /* Text color */
     text-align: left; /* Center text */
@@ -193,8 +193,8 @@ svg {
   }
   
   .dots-container {
-    position: absolute;
-    bottom: 10px; /* Position dots at the bottom */
+    position: relative;
+    bottom: 100px; /* Position dots at the bottom */
     left: 50%;
     transform: translateX(-50%); /* Center the dots horizontally */
     text-align: center;
@@ -246,11 +246,7 @@ svg {
     font-size:medium;
     font-weight: 400;
   }
-
-  h2{
-    font-family: "Montserrat", serif; 
-    font-size:large;
-  }
+  
   /* Sofie Slut */
 
   /*Pernille start*/
