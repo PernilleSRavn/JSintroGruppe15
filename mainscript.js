@@ -1,10 +1,4 @@
-
-/* Jakob */
-document.addEventListener("DOMContentLoaded", function () {
-  $("header").load("header-jakob.html");
-});
-/* Jakob */
-
+/* 
 //sofie
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -60,3 +54,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Pernille Slut //
+
+*/
