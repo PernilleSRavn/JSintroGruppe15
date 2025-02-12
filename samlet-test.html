@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="pernille.js" defer></script>
     <script src="jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -22,7 +23,40 @@
 <div id="services"></div>
 <div id="omsection"></div>
 
-Dette er et hej fra samlet.html
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const logo = document.getElementById("logo");
+    
+        function updateLogoColor() {
+            const rect = logo.getBoundingClientRect(); // Get logo position
+            const elementBehind = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+    
+            if (elementBehind) {
+                const bgColor = window.getComputedStyle(elementBehind).backgroundColor;
+                const isLight = isLightColor(bgColor);
+    
+                logo.style.filter = isLight ? "invert(1)" : "invert(0)"; // Invert logo if background is light
+            }
+        }
+    
+        function isLightColor(color) {
+            if (!color || color === "transparent") return true; // Default to light if transparent
+    
+            const rgb = color.match(/\d+/g);
+            if (!rgb) return true;
+    
+            // Calculate luminance (perceived brightness)
+            const [r, g, b] = rgb.map(Number);
+            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    
+            return luminance > 0.5; // Light if > 0.5
+        }
+    
+        updateLogoColor();
+        window.addEventListener("scroll", updateLogoColor);
+    });
+    </script>
+    
 </body>
+
 </html>
