@@ -183,7 +183,7 @@ svg {
   }
   
   .text-overlay {
-    position: relative;
+    position: absolute;
     top: 35%; /* Center vertically */
     left: 10vw; /* Center horizontally */
     color: white; /* Text color */
