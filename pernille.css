@@ -5,7 +5,7 @@ p {
 }
 
 h1 {
-    font-family: "Gabarito", serif;
+    font-family: "Gabarito", serif; 
     font-size: xx-large;
 
 }
@@ -13,8 +13,8 @@ h1 {
 h2 {
     font-family: "Montserrat", serif; 
     color: rgb(0, 0, 0); /*farve på spørgsmålene i boksen */
-    font-weight: bold;
-    font-size: x-large;
+    font-weight: bold; /*tykkelsen på bogstaver */
+    font-size: x-large; /*størrelse på font, kunen også have lavet i px */
 
 }
 
