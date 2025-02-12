@@ -1,4 +1,5 @@
 .slideshow-container {
+
   width: 100%;
   max-width: 100%;
   height: 80vh; /* Adjust height as needed */
@@ -21,7 +22,7 @@
 
 .text-overlay {
   position: absolute;
-  top: 55%; /* Center vertically */
+  top: 35%; /* Center vertically */
   left: 10vw; /* Center horizontally */
   color: white; /* Text color */
   text-align: left; /* Center text */
@@ -30,8 +31,8 @@
 }
 
 .dots-container {
-  position: absolute;
-  bottom: 10px; /* Position dots at the bottom */
+  position: relative;
+  bottom: 100px; /* Position dots at the bottom */
   left: 50%;
   transform: translateX(-50%); /* Center the dots horizontally */
   text-align: center;
@@ -84,7 +85,13 @@ h2 {
   font-weight: 400;
 }
 
-h2{
+p {
   font-family: "Montserrat", serif; 
-  font-size:medium;
+  font-size: medium;
+}
+
+h1 {
+  font-family: "Gabarito", serif;
+  font-size: xx-large;
+
 }
