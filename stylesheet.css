@@ -272,7 +272,10 @@ h1 {
 /*Her styler jeg den sektion som både billede og tekst er i */
 .lisbeth_container {
   background-color: #7eb6cc; /* Tilføjer baggrundsfarve */
-  padding: 5px; /* Indvendig afstand rundt om containeren*/
+  max-width: 1200px; /*Maks bredde */
+  width: 90%; /*sikre at den hvide kan også vises ved mindre skærm størrelse */
+  margin: 0 auto; 
+  padding: 40px 20px; /* Indvendig afstand rundt om containeren*/
 }
 
 /*Her laver jeg en container til billede og tekst så de er ved siden af hinanden*/
@@ -281,13 +284,37 @@ h1 {
   align-items: center; /* Centrerer elementerne lodret i forhold til hinanden */
   gap: 50px; /* Tilføjer 50px afstand mellem billede og tekst */
   margin: 3rem; /* Tilføjer en margin på omkring containeren */
-  
+ 
 }
 
 #lisbeth_billed {
-  width: 500px; /* Bredde på billedet*/
-  height: 300px; /* højden på billedet */
+  width: 800px; /* Bredde på billedet*/
+  max-width: 1000px; /*sikre at billede ikke bliver for stort */
+  height: auto; /* højden på billedet */
+  display: block;
 }
+
+
+/* 🔹 Her bruger jeg media for at gøre det responsivt– Tekst rykkes ned under billedet */
+@media (max-width: 1024px) {
+  .image-text-container {
+      display: block; /* Ændrer layout til kolonne på små skærme */
+      text-align: center;
+  }
+
+
+  #lisbeth_billed {
+      width: 90%; /* Skalerer billedet ned */
+      max-width: 350px; /* Sikrer, at det ikke bliver for bredt */
+      margin: 0 auto; /* Centrerer billedet */
+  }
+
+
+  .tekst {
+      margin-top: 20px; /* Lidt luft mellem billede og tekst */
+  }
+}
+
 
 /* HER STARTER FAQ STYLING bla */
 
@@ -321,33 +348,65 @@ h1 {
 /*HER BEGYNDER FOOTER STYLING */
 
 .footer {
-  background-color: #7eb6cc; /* Tilføjer baggrundsfarve */
+  background-color: #7eb6cc; /* giver baggrundsfarve */
   padding: 20px 40px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
 }
 
+
 .footer-container {
   display: flex; /* Bruger flexbos her til at få indholdet til at se sådan ud som det gør */
+  flex-wrap: wrap; /* Gør footer fleksibel på små skærme */
   justify-content: space-between; /* Fordeler afstand mellem elementer */
   align-items: center; /*Centrerer indholdet lodret */
-  max-width: 1200px; /* Giver maks bredde på containeren */
-  margin: 0 auto; /*centrere containeren horisontalt på siden  */
+  max-width: 1200px;  /* Giver maks bredde på containeren */
+  margin: 0 auto;/*centrere containeren horisontalt på siden  */
 }
+
+
+
 
 .footer-column.left {
   flex: 1; /* Sørger for at fylde venstre side */
   text-align: left; /*Justere tekst til venstre */
-  line-height: 0.5; /* Sætter linjehøjde til 0.5 for at reducere afstanden mellem linjerne */
+  line-height: 1.5; /* Lidt mere luft i teksten */
 }
+
 
 .footer-right {
   display: flex; /* Bruger flexbox til at arrangere indholdet i denne sektion */
   gap: 40px; /* Juster afstanden mellem kolonner */
-  line-height: 0.5; /* Sætter linjehøjde til 0.5 for at reducere afstanden mellem linjerne */
-  
 }
+
 
 .footer-column {
   text-align: right; /* Justere tekst til højre */
 }
+
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .footer-container {
+      flex-direction: column; /* Skift til kolonne på mindre skærme */
+      text-align: center;
+  }
+
+
+  .footer-column.left {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+
+  .footer-right {
+      flex-direction: column; /* Sæt elementerne under hinanden */
+      gap: 20px; /* Reducér mellemrum */
+  }
+
+
+  .footer-column {
+      text-align: center; /* Justere tekst til højre */
+  }
+}
+
 
 /* Pernille CSS slut */

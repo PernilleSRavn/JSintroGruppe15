@@ -94,32 +94,33 @@ h2 {
 /*HER BEGYNDER FOOTER STYLING */
 
 .footer {
-    background-color: #7eb6cc;
-    padding: 20px 40px;
+    background-color: #7eb6cc; /* giver baggrundsfarve */
+    padding: 20px 40px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
 }
 
 .footer-container {
-    display: flex;
+    display: flex; /* Bruger flexbos her til at få indholdet til at se sådan ud som det gør */
     flex-wrap: wrap; /* Gør footer fleksibel på små skærme */
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between; /* Fordeler afstand mellem elementer */
+    align-items: center; /*Centrerer indholdet lodret */
+    max-width: 1200px;  /* Giver maks bredde på containeren */
+    margin: 0 auto;/*centrere containeren horisontalt på siden  */
 }
 
+
 .footer-column.left {
-    flex: 1;
-    text-align: left;
+    flex: 1; /* Sørger for at fylde venstre side */
+    text-align: left; /*Justere tekst til venstre */
     line-height: 1.5; /* Lidt mere luft i teksten */
 }
 
 .footer-right {
-    display: flex;
-    gap: 40px;
+    display: flex; /* Bruger flexbox til at arrangere indholdet i denne sektion */
+    gap: 40px; /* Juster afstanden mellem kolonner */
 }
 
 .footer-column {
-    text-align: right;
+    text-align: right; /* Justere tekst til højre */
 }
 
 /* 🔹 RESPONSIVE DESIGN */
@@ -140,6 +141,6 @@ h2 {
     }
 
     .footer-column {
-        text-align: center;
+        text-align: center; /* Justere tekst til højre */ 
     }
 }
