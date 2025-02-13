@@ -266,12 +266,19 @@ h1 {
 /*STYLING AF BILLEDE MED LISBETH OG OM HENDE SEKTION */
 
 /*Her styler jeg den sektion som både billede og tekst er i */
+
+.full-width-container {
+background-color: #7eb6cc;
+width: 100vw;
+position: relative;
+}
+
 .lisbeth_container {
-  background-color: #7eb6cc; /* Tilføjer baggrundsfarve */
-  max-width: 1200px; /*Maks bredde */
+  max-width: 1315px; /*Maks bredde */
   width: 90%; /*sikre at den hvide kan også vises ved mindre skærm størrelse */
   margin: 0 auto; 
   padding: 40px 20px; /* Indvendig afstand rundt om containeren*/
+  border-radius: 20px; /*giver runding på kanterne i denne container */
 }
 
 /*Her laver jeg en container til billede og tekst så de er ved siden af hinanden*/
