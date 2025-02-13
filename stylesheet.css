@@ -212,44 +212,6 @@ svg {
   overflow: hidden; /* Hide overflow */
   text-overflow:ellipsis; /* Add ellipsis for overflow text */
 }
-
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
- 
-
-  .slideshow-container h3 {
-    font-weight: 200;
-  }
-
-
-  .mySlides {
-    display: none;
-    width: 100%;
-    height: 100%; /* Ensure all slides have the same height */
-    overflow: hidden;
-  }
-  
-  .mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
-  }
-
-  .text-overlay {
-    padding: 10px; /* Reduce padding for smaller screens */
-    max-width: 95%; /* Increase max-width for smaller screens */
-  }
-}
-@media (max-width: 480px) {
-
-
-  .text-overlay {
-    top: 40%; /* Adjust vertical position for very small screens */
-    left: 5%; /* Adjust horizontal position for very small screens */
-    transform: translate(0, -50%); /* Adjust centering */
-    max-width: 90%; /* Increase max-width for very small screens */
-  }
-}
   
   .dots-container {
     position: relative;
@@ -308,10 +270,47 @@ svg {
 
   h3{
     font-family: "Montserrat", serif; 
-    font-size: 200;
-  
+    font-size: 400;
 
   }
+
+  /* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+ 
+
+  .slideshow-container h3 {
+    font-weight: 400;
+  }
+
+
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%; /* Ensure all slides have the same height */
+    overflow: hidden;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  }
+
+  .text-overlay {
+    padding: 10px; /* Reduce padding for smaller screens */
+    max-width: 95%; /* Increase max-width for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+
+
+  .text-overlay {
+    top: 40%; /* Adjust vertical position for very small screens */
+    left: 5%; /* Adjust horizontal position for very small screens */
+    transform: translate(0, -50%); /* Adjust centering */
+    max-width: 90%; /* Increase max-width for very small screens */
+  }
+}
   
   /* Sofie Slut */
 
