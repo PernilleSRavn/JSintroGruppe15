@@ -350,7 +350,6 @@ position: relative;
   opacity: 80%; /*gør at farvens styrke er lidt nedsat så man kan se at musen holdes hen over*/
 }
 
-
 .answer {
   display: none;
   margin-top: 10px; /*afstand fra tekst og overskrift*/
@@ -361,7 +360,7 @@ position: relative;
 
 .footer {
   background-color: #7eb6cc; /* giver baggrundsfarve */
-  padding: 20px 40px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
+  padding: 100px 80px 100px 80px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
 }
 
 
