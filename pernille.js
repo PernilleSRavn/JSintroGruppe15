@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function(){
     const faqs = document.querySelectorAll('.faq-container');
 
 
@@ -8,4 +8,4 @@ document.addEventListener("DOMContentLoaded", function() {
             answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
         });
     });
-});
+}, 1000);
