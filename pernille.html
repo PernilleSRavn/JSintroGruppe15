@@ -1,4 +1,5 @@
 <!--Sektion: kasse med billede og tekst ved siden af hinanden-->
+<div class="full-width-container">
     <section class="lisbeth_container">
         <div class="image-text-container">
           <img src="images/lisbethbilled.jpeg" alt="Billede af lisbeth" id="lisbeth_billed">
@@ -11,6 +12,8 @@
           </div>
         </div>
   </section>
+</div>
+
 
  <!--Sektion: blå bokse med spørgsmål-->
 <section class="faq-section">
@@ -111,16 +114,4 @@
             </div>
         </div>
     </footer> 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const faqs = document.querySelectorAll('.faq-container');
-
-
-    faqs.forEach(faq => {
-        faq.addEventListener('click', () => {
-            const answer = faq.querySelector('.answer');
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-});
-    </script>
+<script src="pernille.js"></script>

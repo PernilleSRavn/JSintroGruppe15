@@ -113,9 +113,15 @@ svg {
 /* Jakob slut*/
 /* Jakob pt2*/
 
+#servicestitel {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 #Services_Container {
+    padding: 50px 0 50px 0;
     width: 100%;
-    height: 60vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -124,25 +130,21 @@ svg {
     width: 80%;
     margin: auto;
     align-content: flex-end;
-    padding-bottom: 5vh;
-    flex: .5;
+    height: 150px;
 }
 
 #Services_Container__Bottom {
-    flex: 1;
+    height: 300px;
     display: flex;
     flex-direction: row;
     width: 80%;
     margin: auto;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
 }
+
 #Services_Container__Bottom main {
     flex: 1;
     text-align: center;
-
-}
-
-#Services_Container__Bottom main {
     background-color: gainsboro;
     border-radius: 2vh;
     justify-content: center;
@@ -213,12 +215,35 @@ svg {
 
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    height: 80vh; /* Adjust height as needed */
+    overflow: hidden; /* Ensure images don't overflow */
+    margin: 0;
+    padding: 0;
+  }
+
+  .slideshow-container h2 {
+    font-weight: 400;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%; /* Ensure all slides have the same height */
+    overflow: hidden;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  }
 
   .text-overlay {
     padding: 10px; /* Reduce padding for smaller screens */
     max-width: 95%; /* Increase max-width for smaller screens */
   }
-}
 
 @media (max-width: 480px) {
 
@@ -283,7 +308,7 @@ svg {
   h2 {
     font-family: "Montserrat", serif; 
     font-size:medium;
-    font-weight: 400;
+    font-weight: 800;
   }
   
   /* Sofie Slut */
@@ -305,12 +330,19 @@ h1 {
 /*STYLING AF BILLEDE MED LISBETH OG OM HENDE SEKTION */
 
 /*Her styler jeg den sektion som både billede og tekst er i */
+
+.full-width-container {
+background-color: #7eb6cc;
+width: 100vw;
+position: relative;
+}
+
 .lisbeth_container {
-  background-color: #7eb6cc; /* Tilføjer baggrundsfarve */
-  max-width: 1200px; /*Maks bredde */
+  max-width: 1315px; /*Maks bredde */
   width: 90%; /*sikre at den hvide kan også vises ved mindre skærm størrelse */
   margin: 0 auto; 
   padding: 40px 20px; /* Indvendig afstand rundt om containeren*/
+  border-radius: 20px; /*giver runding på kanterne i denne container */
 }
 
 /*Her laver jeg en container til billede og tekst så de er ved siden af hinanden*/
@@ -362,7 +394,7 @@ h1 {
 .faq-container {
   border-radius: 10px; /*runding af hjørne */
   margin-bottom: 20px; /*afstand mellem tekstboksene */
-  padding: 10px; /*spacing over og under spørgsmålet inde i boksen */
+  padding: 30px; /*spacing over og under spørgsmålet inde i boksen */
   cursor: pointer; /*gør at det er en finger der peger på spørgsmål når musen hover hen over */
   background: #7eb6cc; /*baggrundsfarve i boksen */
 }
@@ -372,7 +404,6 @@ h1 {
   background: #bad5e1; /*farve når musen holdes hen over boksen */
   opacity: 80%; /*gør at farvens styrke er lidt nedsat så man kan se at musen holdes hen over*/
 }
-
 
 .answer {
   display: none;
@@ -384,7 +415,7 @@ h1 {
 
 .footer {
   background-color: #7eb6cc; /* giver baggrundsfarve */
-  padding: 20px 40px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
+  padding: 100px 80px 100px 80px; /* Indvendig afstand i toppen og ude ved siderne (højre og ventre side) */
 }
 
 
