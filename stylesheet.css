@@ -299,18 +299,17 @@ svg {
   .button-grey:hover{
     background-color: #BAD5E1;
   }
+
   
-/*
   h2 {
     font-family: "Montserrat", serif; 
     font-size:medium;
     font-weight: 800;
   }
-*/
 
   h3{
     font-family: "Montserrat", serif; 
-    font-size: 200;
+    font-size: 100 !important;
   
 
   }
