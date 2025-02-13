@@ -335,7 +335,7 @@ position: relative;
 .faq-container {
   border-radius: 10px; /*runding af hjørne */
   margin-bottom: 20px; /*afstand mellem tekstboksene */
-  padding: 10px; /*spacing over og under spørgsmålet inde i boksen */
+  padding: 30px; /*spacing over og under spørgsmålet inde i boksen */
   cursor: pointer; /*gør at det er en finger der peger på spørgsmål når musen hover hen over */
   background: #7eb6cc; /*baggrundsfarve i boksen */
 }
