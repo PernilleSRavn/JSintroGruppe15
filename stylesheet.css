@@ -113,9 +113,14 @@ svg {
 /* Jakob slut*/
 /* Jakob pt2*/
 
+#servicestitel {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 #Services_Container {
     width: 100%;
-    height: 60vh;
+    height: 800px;
     display: flex;
     flex-direction: column;
 }
@@ -124,7 +129,6 @@ svg {
     width: 80%;
     margin: auto;
     align-content: flex-end;
-    padding-bottom: 5vh;
     flex: .5;
 }
 
@@ -134,7 +138,7 @@ svg {
     flex-direction: row;
     width: 80%;
     margin: auto;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
 }
 #Services_Container__Bottom main {
     flex: 1;
@@ -174,6 +178,7 @@ svg {
     display: none;
     width: 100%;
     height: 100%; /* Ensure all slides have the same height */
+    overflow: hidden;
   }
   
   .mySlides img {
@@ -224,8 +229,8 @@ svg {
     padding: 0.9vh 4vw;
     border: 0px;
     background-color: #7EB6CC;
-    font-size: larger;
   }
+
   .button-grey { 
     border-radius: 10px;
     padding: 0.9vh 4vw;
