@@ -160,42 +160,80 @@ svg {
 }
 /* Jakob pt2 slut */
 /* Sofie */
-  .slideshow-container {
+.slideshow-container {
+  width: 100%;
+  max-width: 100%;
+  height: 80vh; 
+  overflow: hidden; /* Ensure nothing overflows the container */
+  position: relative; /* Required for absolute positioning of child elements */
+  margin: 0;
+  padding: 0;
+}
 
-    width: 100%;
-    max-width: 100%;
-    height: 80vh; /* Adjust height as needed */
-    overflow: hidden; /* Ensure images don't overflow */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .mySlides {
-    display: none;
-    width: 100%;
-    height: 100%; /* Ensure all slides have the same height */
-    overflow: hidden;
-  }
-  
-  .mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
-  }
-  
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%; 
+  position: relative; 
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 10vh;
+  color: white; /* Text color */
+  text-align: left; /* Align text to the left */
+  border-radius: 10px; /* Rounded corners */
+  z-index: 2; /* Ensure text is above the images */
+  max-width: 90%; /* Limit the width of the text overlay */
+  padding: 20px; /* Add padding for better readability */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.text-overlay h1 {
+  margin: 0 0 10px 0; /* Add margin for spacing */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.text-overlay h2 {
+  margin: 0; /* Remove default margin */
+  line-height: 1.5; /* Improve readability */
+  white-space: normal; /* Allow text to wrap */
+  overflow: hidden; /* Hide overflow */
+  text-overflow:ellipsis; /* Add ellipsis for overflow text */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+
   .text-overlay {
-    position: absolute;
-    top: 35%; /* Center vertically */
-    left: 10vw; /* Center horizontally */
-    color: white; /* Text color */
-    text-align: left; /* Center text */
-    border-radius: 10px; /* Rounded corners */
-    z-index: 2; /* Ensure text is above the images */
+    padding: 10px; /* Reduce padding for smaller screens */
+    max-width: 95%; /* Increase max-width for smaller screens */
   }
+}
+
+@media (max-width: 480px) {
+
+
+  .text-overlay {
+    top: 40%; /* Adjust vertical position for very small screens */
+    left: 5%; /* Adjust horizontal position for very small screens */
+    transform: translate(0, -50%); /* Adjust centering */
+    max-width: 90%; /* Increase max-width for very small screens */
+  }
+}
   
   .dots-container {
     position: relative;
-    bottom: 100px; /* Position dots at the bottom */
+    bottom: 10%; /* Position dots at the bottom */
     left: 50%;
     transform: translateX(-50%); /* Center the dots horizontally */
     text-align: center;
